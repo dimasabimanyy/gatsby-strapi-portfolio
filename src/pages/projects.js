@@ -16,7 +16,7 @@ const ProjectsPage = ({
 export const query = graphql`
 {
   allStrapiProjects {
-    nodes {
+    nodes { 
       github
       id
       description
