@@ -3,14 +3,10 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
 
-const Blog = ({
-  data: {
-    allStrapiBlogs: { nodes: blogs },
-  },
-}) => {
+const Blog = ({data: {allStrapiBlogs: {nodes:blogs}}}) => {
   return <Layout>
     <section className="blog-page">
-      <Blogs blog={blogs} title="Blog" />
+      <Blogs blogs={blogs} title="Blog" />
     </section>
   </Layout>
 }
