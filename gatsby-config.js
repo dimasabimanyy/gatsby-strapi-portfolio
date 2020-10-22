@@ -7,11 +7,11 @@
 module.exports = {
   siteMetadata: {
     title: "Dimas Abimanyu Portfolio",
-    description: "Software Engineer Portfolio",
+    description: "Software Engineer Portfolio | Indonesia",
     author: "@dimasabimanyy",
     twitterUsername: "@dimasabimanyy",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://dimasabimanyuv4.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -37,19 +37,19 @@ module.exports = {
         singleTypes: [`about`],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Roboto`,
-    //         variants: [`400`, `700`],
-    //       },
-    //       {
-    //         family: `Open Sans`,
-    //       },
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Open Sans`,
+          },
+        ],
+      },
+    },
   ],
 }
