@@ -31,7 +31,12 @@ const data = [
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
-      <Link to={link.url}>{link.text}</Link>
+      <Link to={link.url}>
+        <div>
+         0{link.id}
+        </div>
+        {link.text}
+      </Link>
     </li>
   )
 })
@@ -39,7 +44,7 @@ const tempLinks = data.map(link => {
 
 export default ({ styleClass }) => {
   return (
-    <ul className={`page-links ${styleClass ? styleClass : ""}`}>
+    <ul className={`nav-links ${styleClass ? styleClass : ""}`}>
       {tempLinks}
     </ul>
   )

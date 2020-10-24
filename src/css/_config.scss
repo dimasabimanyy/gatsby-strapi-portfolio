@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap");
+
+$font-stack: "Noto Sans JP", sans-serif;
+$font-unique: "Raleway", sans-serif;
+$light-bg: #fff;
+$dark-bg: #131314;
+$white: #fff;
+$secondary-color: #d90a2c;
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
